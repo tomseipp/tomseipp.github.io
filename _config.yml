@@ -181,7 +181,10 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  academic_work:
+  academic_projects:
+    output: true
+    permalink: /:collection/:path/
+  hobby_projects:
     output: true
     permalink: /:collection/:path/
 
