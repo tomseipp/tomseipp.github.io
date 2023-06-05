@@ -8,6 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
+<img src="./images/Ben Hoskings CV.png" alt="drawing" width="200"/>
 
 Education
 ======
