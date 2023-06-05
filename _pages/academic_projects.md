@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Academic Work"
-permalink: /academic_work/
+permalink: /hobby_projects/
 author_profile: true
 ---
 
@@ -11,6 +11,6 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.academic_work reversed %}
+{% for post in site.academic_projects reversed %}
   {% include archive-single.html %}
 {% endfor %}
