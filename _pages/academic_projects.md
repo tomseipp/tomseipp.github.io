@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Academic Work"
-permalink: /hobby_projects/
+title: "Academic Projects"
+permalink: /academic_projects/
 author_profile: true
 ---
 
