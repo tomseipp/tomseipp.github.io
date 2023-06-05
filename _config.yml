@@ -181,6 +181,9 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
+  academic_work:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -220,10 +223,19 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _CV
+  # _cv
   - scope:
       path: ""
       type: cv
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _academic_work
+  - scope:
+      path: ""
+      type: academic_work
     values:
       layout: single
       author_profile: true
