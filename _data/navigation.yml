@@ -1,16 +1,10 @@
 # main links links
 main:
-  - title: "Academic Work"
-    url: /academic_work/
+  - title: "Academic Projects"
+    url: /academic_projects/
 
-  - title: "Talks"
-    url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
-        
-  - title: "Blog Posts"
-    url: /year-archive/
+  - title: "Hobby Projects"
+    url: /hobby_projects/    
     
   - title: "CV"
     url: /cv/
