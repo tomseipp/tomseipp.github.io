@@ -9,8 +9,8 @@
 locale                   : "en-GB"
 title                    : "Ben Hoskings / Homepage"
 title_separator          : "-"
-name                     : &name "Ben Hoskings"
-description              : &description "3rd Year Systems Engineer"
+name                     : &name "Ben Hoskings Website"
+description              : &description "Ben Hoskings personal website"
 url                      : https://benhoskings1.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "benhoskings1/academicpages.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Ben Hoskings"
   avatar           : "ProfilePic.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "3rd Year Systems Engineer"
   location         : "Location"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "http://linkedin/in/ben-hoskings"
   orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
