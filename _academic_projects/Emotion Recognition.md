@@ -1,6 +1,6 @@
 ---
-title: "Emotion Recognition from a Sequence of 3D Facial Landmarks"
 layout: archive
+title: "Emotion Recognition from a Sequence of 3D Facial Landmarks"
 author_profile: true
 collection: academic_projects
 permalink: /academic_projects/Emotion_Recognition
