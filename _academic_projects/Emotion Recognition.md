@@ -1,15 +1,17 @@
 ---
 title: "Emotion Recognition from a Sequence of 3D Facial Landmarks"
+layout: archive
+author_profile: true
 collection: academic_projects
 permalink: /academic_projects/Emotion_Recognition
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+excerpt: 'This paper presents a novel classification framework for the detection of a subject's affective state'
 date: 2023-03-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+# venue: 'Journal 1'
+paperurl: 'http://academicpages.github.io/files/EmotionRecognitionReport.pdf'
+# citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
-This paper is about the number 1. The number 2 is left for future work.
+This paper presents a novel classification framework for the detection of a subject's affective state
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+[Download paper here](http://academicpages.github.io/files/EmotionRecognitionReport.pdf)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+<!-- Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1). -->
