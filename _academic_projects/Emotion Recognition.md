@@ -6,9 +6,7 @@ collection: academic_projects
 permalink: /academic_projects/Emotion_Recognition
 excerpt: 'This paper presents a novel classification framework for the detection of a subject's affective state'
 date: 2023-03-01
-# venue: 'Journal 1'
 paperurl: 'http://academicpages.github.io/files/EmotionRecognitionReport.pdf'
-# citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
 This paper presents a novel classification framework for the detection of a subject's affective state
 
