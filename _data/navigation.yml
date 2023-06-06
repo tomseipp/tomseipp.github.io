@@ -4,7 +4,10 @@ main:
     url: /academic_projects/
 
   - title: "Hobby Projects"
-    url: /hobby_projects/    
+    url: /hobby_projects/  
+
+  - title: "Experince"
+    url: /experience/  
     
   - title: "CV"
     url: /cv/
