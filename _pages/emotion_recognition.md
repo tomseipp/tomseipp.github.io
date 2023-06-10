@@ -1,5 +1,5 @@
 ---
-permalink: /academic_projects/emotion_recognition
+permalink: /emotion_recognition
 title: "Emotion Recognition"
 author_profile: true
 ---
