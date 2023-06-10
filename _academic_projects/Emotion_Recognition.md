@@ -1,7 +1,7 @@
 ---
 title: "Emotion Recognition from a sequence of 3D facial landmarks"
 collection: academic_projects
-permalink: /emotion_recognition
+permalink: /academic_projects/emotion_recognition
 author_profile: true
 ---
 
