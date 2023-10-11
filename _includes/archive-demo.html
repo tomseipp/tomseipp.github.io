@@ -38,11 +38,11 @@
           <p> {{ post.overview }} </p>
         {% endif%}
 
-        <div><a href="{{ base_path }}{{ post.url }}" rel="permalink">Explore the project</a></div>
+        <div><a> href="{{ base_path }}{{ post.url }}" rel="permalink">Explore the project</a></div>
 
         {% if post.git_link %}
         <div>
-          <a href="{{post.git_link}}" rel="permalink">Explore the code</a>
+          <a> href="{{post.git_link}}" rel="permalink"><span>Explore the code</span></a>
         </div>
         {% endif %}
   </article>
