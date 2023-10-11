@@ -44,17 +44,17 @@
         {% endif%}
 
         <div>
-          <table style="width:30%;border: none;">
+          <table style="width:30%;border:none;text-align: center;"">
             <tr>
               {% if post.git_link %}
-                <th><a href="{{ base_path }}{{ post.url }}" rel="permalink" {text-align: center;}>
+                <th style="border:none;text-align: center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
                   Explore the project
                 </a></th>
-                <th><a href="{{post.git_link}}">
+                <th style="border:none;"><a href="{{post.git_link}}">
                   Explore the code
                 </a></th>
               {% elsif post.permalink %}
-                <th><a href="{{ base_path }}{{ post.url }}" rel="permalink" {text-align: center;}>
+                <th style="border:none;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
                   Explore the project
                 </a></th>
               {% endif %}
