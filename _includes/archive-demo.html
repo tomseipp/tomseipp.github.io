@@ -33,5 +33,13 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
+
+    <h3 class="archive__item-title" itemprop="headline">
+      {% if post.overview %}
+        <a {{post.overview}}></a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </h3>
   </article>
 </div>
