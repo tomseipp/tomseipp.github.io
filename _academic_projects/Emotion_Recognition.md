@@ -12,7 +12,7 @@ git_link: https://github.com/benhoskings1/Emotion_Recognition.git
 
 
 # Abstract
-<img src="/images/EmotionRecognitionAbstract.png" alt="emotion-recognition-abstract" width="900"/>
+<img src="/images/EmotionAbstract.pdf" alt="emotion-recognition-abstract" width="900"/>
 
 # Acknowledgemnts
 
