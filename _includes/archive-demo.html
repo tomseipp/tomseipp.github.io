@@ -41,12 +41,17 @@
         <div>
           <table>
             <tr>
-              <th><a href="{{ base_path }}{{ post.url }}" rel="permalink" {text-align: center;}>
-                Explore the project
-              </a></th>
+              
               {% if post.git_link %}
+                <th><a href="{{ base_path }}{{ post.url }}" rel="permalink" {text-align: center;}>
+                  Explore the project
+                </a></th>
                 <th><a href="{{post.git_link}}" rel="permalink">
                   Explore the code
+                </a></th>
+              {% else %}
+                <th><a href="{{ base_path }}{{ post.url }}" rel="permalink" {text-align: center;}>
+                  Explore the project
                 </a></th>
               {% endif %}
             </tr>
