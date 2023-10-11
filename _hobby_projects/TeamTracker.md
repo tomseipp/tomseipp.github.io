@@ -1,6 +1,6 @@
 ---
 title: "Coventry Godiva Harriers Team Solution"
-collection: hobby_projectcs
+collection: hobby_projects
 permalink: /hobby_projectcs/godiva_harriers
 author_profile: true
 overview: "This project produced an app that enables tracking of multiple members within a sports team using the Strava API"
