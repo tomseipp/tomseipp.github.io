@@ -175,10 +175,22 @@ kramdown:
 
 # Collections
 collections:
-  academic_projects:
+  academic)rojects:
     output: true
     permalink: /:collection/:path/
   hobby_projects:
+    output: true
+    permalink: /:collection/:path/
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
     output: true
     permalink: /:collection/:path/
 
