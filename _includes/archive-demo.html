@@ -29,7 +29,7 @@
     <h2>
       {{ title }}
     </h2>
-    {% if post.languages}
+    {% if post.languages %}
       <a>
         {{post.languages}}
       </a>
@@ -44,10 +44,10 @@
         {% endif%}
 
         <div>
-          <table style="width:30%;border:none;text-align: center;"">
+          <table style="width:30%;border:none;text-align:center;"">
             <tr>
               {% if post.git_link %}
-                <th style="border:none;text-align: center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                <th style="border:none;text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
                   Explore the project
                 </a></th>
                 <th style="border:none;"><a href="{{post.git_link}}">
