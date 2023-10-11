@@ -214,13 +214,13 @@ defaults:
       comment: true
  # _hobby_projects
   - scope:
-        path: ""
-        type: hobby_projects
-      values:
-        layout: single
-        author_profile: true
-        share: true
-        comments: true
+      path: ""
+      type: hobby_projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _talks
   - scope:
       path: ""
