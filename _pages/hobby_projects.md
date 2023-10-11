@@ -7,6 +7,6 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.hobby_projects reversed %}
+{% for post in site.hobby_projects %}
   {% include archive-demo.html %}
 {% endfor %}
