@@ -8,12 +8,17 @@ overview:
     The key contributions are ..."
 git_link: https://github.com/benhoskings1/Emotion_Recognition.git
 ---
-# Project Description 
+## Project Description 
+A few lines abou the project on a braod level 
 
-
-# Abstract
+## Abstract
 <img src="/images/EmotionAbstract.pdf" alt="emotion-recognition-abstract" width="900"/>
 
-# Acknowledgemnts
+## Code Access
+<a href="{{git_link}}">Explore the git repo</a>
 
-# Downlaod Full Technical Report
+## Acknowledgemnts
+Thanks to Tardi Tjahadi
+
+## Downlaod Full Technical Report
+Link to download the full text

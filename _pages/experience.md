@@ -6,11 +6,11 @@ redirect_from:
   - /experience/
   - /about.html
 ---
-# Applied Data Science Internship -- Teva Pharmaceuticals
+## Applied Data Science Internship -- Teva Pharmaceuticals
 
-# Warwick Snow
-## President
+## Warwick Snow
+### President
 as the president ...
 
-## Captain 
+### Captain 
 as the captain ...
