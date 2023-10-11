@@ -34,12 +34,12 @@
       {% endif %}
     </h2>
 
-    <h3 class="archive__item-overview" itemprop="headline">
-      {% if post.overview %}
-        <a {{post.overview}}></a>
-      {% endif %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
-    </h3>
+    {% if post.read_time %}
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+
+        {% if post.overview %}
+          <p> {{ post.overview }} </p>
+        {% endif%}
   </article>
 </div>
