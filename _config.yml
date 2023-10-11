@@ -203,6 +203,31 @@ defaults:
       author_profile: true
       share: true
       comment: true
+  # _academic_work
+  - scope:
+      path: ""
+      type: academic_projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  - scope:
+        path: ""
+        type: hobby_projects
+      values:
+        layout: single
+        author_profile: true
+        share: true
+        comments: true
+    # _talks
+    - scope:
+        path: ""
+        type: talks
+      values:
+        layout: talk
+        author_profile: true
+        share: true
 
 # Sass/SCSS
 sass:
