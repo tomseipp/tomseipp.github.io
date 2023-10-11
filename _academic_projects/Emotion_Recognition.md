@@ -8,11 +8,12 @@ overview:
     The key contributions are ..."
 git_link: https://github.com/benhoskings1/Emotion_Recognition.git
 ---
+# Project Description 
 
-<div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <div>
-        <img src"{{ "EmotionRecognitionAbstract.png" | prepend: "/images/" | prepend: base_path }}" alt="Girl in a jacket" width="500" height="600">
-    </div>
- </article>
-</div>
+
+# Abstract
+<img src="/images/EmotionRecognitionAbstract.png" alt="emotion-recognition-abstract" width="900"/>
+
+# Acknowledgemnts
+
+# Downlaod Full Technical Report
