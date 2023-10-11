@@ -3,7 +3,9 @@ title: "Emotion Recognition from a sequence of 3D facial landmarks"
 collection: academic_projects
 permalink: /academic_projects/emotion_recognition
 author_profile: true
-overview: "The constriction of a novel emotion recognition framework"
+overview: 
+    "The project produced a novel facial emotion recognition framework that can be used to classify images. 
+    The key contributions are ..."
 git_link: https://github.com/benhoskings1/Emotion_Recognition.git
 ---
 
