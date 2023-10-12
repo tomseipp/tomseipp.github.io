@@ -26,6 +26,10 @@
   display: table;
   clear: both;
 }
+
+.portrait {
+  height: 200px;
+}
 </style>
 
 <div class="{{ include.type | default: "list" }}__item">
@@ -87,9 +91,9 @@
       <!-- Right column - Image -->
       <div class="column" style="float: left; width: 50%">
         {% if post.cover_image %}
-        <div class="archive__item-teaser">
-          <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract"/>
-        </div>
+          <div class="portrait">
+            <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract"/>
+          </div>
         {% else %}
           <div>
             No image
