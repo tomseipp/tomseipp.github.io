@@ -32,6 +32,11 @@
   clear: both;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 </style>
 
 <div class="{{ include.type | default: "list" }}__item">
@@ -94,7 +99,7 @@
       <div class="column" style="float: left; width: 50%">
         {% if post.cover_image %}
         <div>
-          <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract" style='height: 100%; width: 100%; object-fit: contain'/>
+          <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract"/>
         </div>
         {% else %}
           <div>
