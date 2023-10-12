@@ -34,6 +34,8 @@
 }
 </style>
 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -93,7 +95,7 @@
       <!-- Right column - Image -->
       <div class="column" style="float: left; width: 50%">
         {% if post.cover_image %}
-        <div class="w3-card">
+        <div class="w3-card" style="height:100%">
           <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract"/>
         </div>
         {% else %}
