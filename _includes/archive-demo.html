@@ -46,32 +46,78 @@
           alt="">
       </div>
     {% endif %}
-
     <div class="row">
-      <!-- POST HAS COVER IMAGE -->
       {% if post.cover_image %}
-      <div class="column" style="float: left; width: 70%;">
+        <div class="column" style="float: left; width: 70%;">
 
-        {% if post.languages %}
-          <p style="font-style: italic; text-align: center;">
-            {{post.languages}}
-          </p>
-        {% endif %}
-    
-        {% if post.read_time %}
-          <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-        {% endif %}
-    
-        {% if post.overview %}
-          <p> {{ post.overview }} </p>
-        {% endif%}
-        
-        <!-- Left column - Product overview -->
-        <div>
           <h2>
             {{ title }}
           </h2>
 
+          {% if post.languages %}
+            <p style="font-style: italic; text-align: center;">
+              {{post.languages}}
+            </p>
+          {% endif %}
+      
+          {% if post.read_time %}
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+          {% endif %}
+      
+          {% if post.overview %}
+            <p> {{ post.overview }} </p>
+          {% endif%}
+          
+          <!-- Left column - Product overview -->
+          <div>
+            <table style="width:100%;border:none;"">
+              <tr>
+                {% if post.git_link %}
+                  <th style="border:none;text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                    Explore the project
+                  </a></th>
+                  <th style="border:none;"><a href="{{post.git_link}}">
+                    Explore the code
+                  </a></th>
+                {% elsif post.permalink %}
+                  <th style="border:none;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                    Explore the project
+                  </a></th>
+                {% endif %}
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- Right column - Image -->
+        <div class="column" style="float: left; width: 30%">
+          {% if post.cover_image %}
+            <div>
+              <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract" style="height: auto; max-height: 300px; display: block; margin-left: auto; margin-right: auto;"/>
+            </div>
+          {% endif %}
+        </div>
+      {% else %}
+      <!-- NO COVER PHOTO -->
+        <h2>
+          {{ title }}
+        </h2>
+
+        {% if post.languages %}
+          <p style="font-style: italic;">
+            {{post.languages}}
+          </p>
+        {% endif %}
+
+        {% if post.read_time %}
+          <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+        {% endif %}
+
+        {% if post.overview %}
+          <p> {{ post.overview }} </p>
+        {% endif%}
+        
+        
+        <div>
           <table style="width:100%;border:none;"">
             <tr>
               {% if post.git_link %}
@@ -89,55 +135,7 @@
             </tr>
           </table>
         </div>
-      </div>
-      <!-- Right column - Image -->
-      <div class="column" style="float: left; width: 30%">
-        {% if post.cover_image %}
-          <div>
-            <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract" style="height: auto; max-height: 300px; display: block; margin-left: auto; margin-right: auto;"/>
-          </div>
         {% endif %}
       </div>
-      <!-- NO COVER IMAGE -->
-      {% else %}
-      <h2>
-        {{ title }}
-      </h2>
-
-      {% if post.languages %}
-        <p style="font-style: italic;">
-          {{post.languages}}
-        </p>
-      {% endif %}
-
-      {% if post.read_time %}
-        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-      {% endif %}
-
-      {% if post.overview %}
-        <p> {{ post.overview }} </p>
-      {% endif%}
-      
-      <!-- Left column - Product overview -->
-      <div>
-        <table style="width:100%;border:none;"">
-          <tr>
-            {% if post.git_link %}
-              <th style="border:none;text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
-                Explore the project
-              </a></th>
-              <th style="border:none;"><a href="{{post.git_link}}">
-                Explore the code
-              </a></th>
-            {% elsif post.permalink %}
-              <th style="border:none;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
-                Explore the project
-              </a></th>
-            {% endif %}
-          </tr>
-        </table>
-      </div>
-      {% endif %}
-    </div>
   </article>
 </div>
