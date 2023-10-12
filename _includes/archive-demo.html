@@ -17,7 +17,6 @@
 .column {
   float: left;
   width: 50%;
-  padding: 10px;
 }
 
 /* Clear floats after the columns */
@@ -54,10 +53,12 @@
 
 
     <div class="row">
+
+      {% if post.cover_image %}
       <div class="column" style="float: left; width: 50%;">
 
         {% if post.languages %}
-          <p>
+          <p style="font-style: italic;">
             {{post.languages}}
           </p>
         {% endif %}
@@ -72,7 +73,7 @@
         
         <!-- Left column - Product overview -->
         <div>
-          <table style="width:30%;border:none;text-align:center;"">
+          <table style="width:100%;border:none;"">
             <tr>
               {% if post.git_link %}
                 <th style="border:none;text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
@@ -96,12 +97,43 @@
           <div>
             <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract" style="height: auto; max-height: 300px;"/>
           </div>
-        {% else %}
-          <div>
-            No image
-          </div>
         {% endif %}
       </div>
+      {% else %}
+      {% if post.languages %}
+        <p style="font-style: italic;">
+          {{post.languages}}
+        </p>
+      {% endif %}
+
+      {% if post.read_time %}
+        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+      {% endif %}
+
+      {% if post.overview %}
+        <p> {{ post.overview }} </p>
+      {% endif%}
+      
+      <!-- Left column - Product overview -->
+      <div>
+        <table style="width:100%;border:none;"">
+          <tr>
+            {% if post.git_link %}
+              <th style="border:none;text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                Explore the project
+              </a></th>
+              <th style="border:none;"><a href="{{post.git_link}}">
+                Explore the code
+              </a></th>
+            {% elsif post.permalink %}
+              <th style="border:none;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                Explore the project
+              </a></th>
+            {% endif %}
+          </tr>
+        </table>
+      </div>
+      {% endif %}
     </div>
   </article>
 </div>
