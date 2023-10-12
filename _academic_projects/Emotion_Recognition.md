@@ -21,7 +21,7 @@ As highlighted in the literature, the field suffers from a lack of transparency 
 
 "A well written report that shows conference in the methodology. It is clear that the student has understood the challenges and has worked to place their own work in the context of the published work. A compelling case is made for the suggested method and it is implemented smoothly. A good analysis is made comparing the results and proposing changes to improve performance. Overall an excellent thesis." - *Second Assessor*
 
-##
+##         
 <img src="/images/EmotionAbstract.pdf" alt="emotion-recognition-abstract" width="auto;"/>
 
 ## Code Access
