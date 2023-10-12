@@ -8,6 +8,7 @@ overview:
     The key contributions are ..."
 git_link: https://github.com/benhoskings1/Emotion_Recognition.git
 languages: "Matlab + Python"
+cover_image: NoseTipDetection.png
 ---
 
 ## Project Description 
