@@ -93,7 +93,9 @@
       <!-- Right column - Image -->
       <div class="column" style="float: left; width: 50%">
         {% if post.cover_image %}
-          <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract"/>
+        <div>
+          <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract" style='height: 100%; width: 100%; object-fit: contain'/>
+        </div>
         {% else %}
           <div>
             No image to show
