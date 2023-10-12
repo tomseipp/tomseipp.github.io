@@ -42,31 +42,33 @@
           <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
         {% endif %}
     
-            {% if post.overview %}
-              <p> {{ post.overview }} </p>
-            {% endif%}
-    
-            <div>
-              <table style="width:30%;border:none;text-align:center;"">
-                <tr>
-                  {% if post.git_link %}
-                    <th style="border:none;text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
-                      Explore the project
-                    </a></th>
-                    <th style="border:none;"><a href="{{post.git_link}}">
-                      Explore the code
-                    </a></th>
-                  {% elsif post.permalink %}
-                    <th style="border:none;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
-                      Explore the project
-                    </a></th>
-                  {% endif %}
-                </tr>
-              </table>
-            </div>
+        {% if post.overview %}
+          <p> {{ post.overview }} </p>
+        {% endif%}
+
+        <div>
+          <table style="width:30%;border:none;text-align:center;"">
+            <tr>
+              {% if post.git_link %}
+                <th style="border:none;text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                  Explore the project
+                </a></th>
+                <th style="border:none;"><a href="{{post.git_link}}">
+                  Explore the code
+                </a></th>
+              {% elsif post.permalink %}
+                <th style="border:none;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                  Explore the project
+                </a></th>
+              {% endif %}
+            </tr>
+          </table>
+        </div>
       </div>
       <div class="column">
-
+        <p>
+          Testing
+        </p>
       </div>
     </div>
   </article>
