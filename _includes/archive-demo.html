@@ -12,6 +12,12 @@
   {% assign title = post.title %}
 {% endif %}
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -32,7 +38,7 @@
 
 
     <div class="row">
-      <div class="column" style="float: left; width: 50%; height: 200px;">
+      <div class="column" style="float: left; width: 50%;">
 
         {% if post.languages %}
           <p>
@@ -69,9 +75,9 @@
         </div>
       </div>
       <!-- Right column - Image -->
-      <div class="column" style="float: left; width: 50%; height: 200px;">
+      <div class="column" style="float: left; width: 50%">
         {% if post.cover_image %}
-          <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract" height="200px"/>
+          <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract"/>
         {% else %}
           <div>
             No image to show
