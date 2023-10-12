@@ -1,11 +1,9 @@
 ---
-title: "Emotion Recognition from a Sequence of 3D Facial Landmarks"
+title: "Gesture Classifier"
 collection: academic_projects
 permalink: /academic_projects/gesture_recognition
 author_profile: true
-overview: 
-    "The project produced a novel facial emotion recognition framework that can be used to classify images. <br>
-    The key contributions are ..."
+overview: "The project produced a gesture classification framework and supporting matlab app."
 languages: "Matlab + Python"
 cover_image: GestureCover.png
 ---
