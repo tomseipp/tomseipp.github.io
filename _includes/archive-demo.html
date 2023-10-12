@@ -47,13 +47,8 @@
       </div>
     {% endif %}
 
-    <h2>
-      {{ title }}
-    </h2>
-
-
     <div class="row">
-
+      <!-- POST HAS COVER IMAGE -->
       {% if post.cover_image %}
       <div class="column" style="float: left; width: 70%;">
 
@@ -73,6 +68,10 @@
         
         <!-- Left column - Product overview -->
         <div>
+          <h2>
+            {{ title }}
+          </h2>
+
           <table style="width:100%;border:none;"">
             <tr>
               {% if post.git_link %}
@@ -99,7 +98,12 @@
           </div>
         {% endif %}
       </div>
+      <!-- NO COVER IMAGE -->
       {% else %}
+      <h2>
+        {{ title }}
+      </h2>
+
       {% if post.languages %}
         <p style="font-style: italic;">
           {{post.languages}}
