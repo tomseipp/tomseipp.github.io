@@ -27,7 +27,7 @@
     {% endif %}
 
     <div class="row">
-      <div class="column">
+      <div class="column" style="width:50%;">
         <h2>
           {{ title }}
         </h2>
@@ -45,7 +45,8 @@
         {% if post.overview %}
           <p> {{ post.overview }} </p>
         {% endif%}
-
+        
+        <!-- Left column - Product overview -->
         <div>
           <table style="width:30%;border:none;text-align:center;"">
             <tr>
@@ -65,7 +66,8 @@
           </table>
         </div>
       </div>
-      <div class="column">
+      <!-- Right column - Image -->
+      <div class="column" style="width:50%;">
         <p>
           Testing
         </p>
