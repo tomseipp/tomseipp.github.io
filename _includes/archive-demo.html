@@ -18,7 +18,6 @@
   float: left;
   width: 50%;
   padding: 10px;
-  max-height: 200px;
 }
 
 /* Clear floats after the columns */
@@ -30,7 +29,7 @@
 
 .portrait {
   height: auto;
-  max-height: 150px;
+
 }
 
 </style>
@@ -95,7 +94,7 @@
       <div class="column" style="float: left; width: 50%">
         {% if post.cover_image %}
           <div>
-            <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract"/>
+            <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract" style="max-height: 200px;"/>
           </div>
         {% else %}
           <div>
