@@ -12,21 +12,6 @@
   {% assign title = post.title %}
 {% endif %}
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -41,12 +26,14 @@
       </div>
     {% endif %}
 
+    <h2>
+      {{ title }}
+    </h2>
+
+
     <div class="row">
-      <div class="column" style="width:50%;">
-        <h2>
-          {{ title }}
-        </h2>
-    
+      <div class="column" style="float: left; width: 50%; padding: 10px;">
+
         {% if post.languages %}
           <p>
             {{post.languages}}
@@ -82,7 +69,7 @@
         </div>
       </div>
       <!-- Right column - Image -->
-      <div class="column" style="width:50%;">
+      <div class="column" style="float: left; width: 50%; padding: 10px;">
         <p>
           Testing
         </p>
