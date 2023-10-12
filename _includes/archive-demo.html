@@ -26,41 +26,48 @@
       </div>
     {% endif %}
 
-    <h2>
-      {{ title }}
-    </h2>
+    <div class="row">
+      <div class="column">
+        <h2>
+          {{ title }}
+        </h2>
+    
+        {% if post.languages %}
+          <p>
+            {{post.languages}}
+          </p>
+        {% endif %}
+    
+        {% if post.read_time %}
+          <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+        {% endif %}
+    
+            {% if post.overview %}
+              <p> {{ post.overview }} </p>
+            {% endif%}
+    
+            <div>
+              <table style="width:30%;border:none;text-align:center;"">
+                <tr>
+                  {% if post.git_link %}
+                    <th style="border:none;text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                      Explore the project
+                    </a></th>
+                    <th style="border:none;"><a href="{{post.git_link}}">
+                      Explore the code
+                    </a></th>
+                  {% elsif post.permalink %}
+                    <th style="border:none;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                      Explore the project
+                    </a></th>
+                  {% endif %}
+                </tr>
+              </table>
+            </div>
+      </div>
+      <div class="column">
 
-    {% if post.languages %}
-      <p>
-        {{post.languages}}
-      </p>
-    {% endif %}
-
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
-
-        {% if post.overview %}
-          <p> {{ post.overview }} </p>
-        {% endif%}
-
-        <div>
-          <table style="width:30%;border:none;text-align:center;"">
-            <tr>
-              {% if post.git_link %}
-                <th style="border:none;text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
-                  Explore the project
-                </a></th>
-                <th style="border:none;"><a href="{{post.git_link}}">
-                  Explore the code
-                </a></th>
-              {% elsif post.permalink %}
-                <th style="border:none;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
-                  Explore the project
-                </a></th>
-              {% endif %}
-            </tr>
-          </table>
-        </div>
+      </div>
+    </div>
   </article>
 </div>
