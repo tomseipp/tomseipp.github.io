@@ -70,7 +70,12 @@
       </div>
       <!-- Right column - Image -->
       <div class="column" style="float: left; width: 50%;">
-        Testing
+        {% if post.cover_image %}
+          <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract"/>
+        {% else %}
+          <div>No image to show</div>
+        {% endif %}
+        
       </div>
     </div>
   </article>
