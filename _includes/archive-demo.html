@@ -50,10 +50,10 @@
           </h2>
 
           {% if post.languages || if post.dates%}
-            <table style="width:100%;text-align: center;""">
+            <table style="width:100%;text-align: center; border-spacing: 5px;">
               <tr>
                 {% if post.languages %}
-                  <th style="width:50%; padding-bottom: 10px;">
+                  <th style="width:50%;">
                     <p style="font-style: italic;font-weight: normal;text-align: center;">
                       {{post.languages}}
                     </p>
@@ -61,7 +61,7 @@
                 {% endif %}
 
                 {% if post.dates %}
-                  <th style="width:50%; padding-bottom: 10px;">
+                  <th style="width:50%;">
                     <p style="font-style: italic; font-weight: normal; font-size: 18px; text-align: center;">
                       {{post.dates}}
                     </p>
