@@ -25,14 +25,6 @@
   display: table;
   clear: both;
 }
-
-.th {
-  padding-top: 5px;
-}
-
-.td {
-  padding-top: 5px;
-}
 </style>
 
 <div class="{{ include.type | default: "list" }}__item">
@@ -61,7 +53,7 @@
               <tr>
                 {% if post.languages %}
                   <th style="width:50%;">
-                    <p style="font-style: italic;font-weight: normal; font-size: 18px; text-align: center;">
+                    <p style="font-style: italic;font-weight: normal; font-size: 18px; text-align: center; padding-top: 8px;">
                       {{post.languages}}
                     </p>
                   </th>
@@ -69,7 +61,7 @@
 
                 {% if post.dates %}
                   <th style="width:50%;">
-                    <p style="font-style: italic; font-weight: normal; font-size: 18px; text-align: center;">
+                    <p style="font-style: italic; font-weight: normal; font-size: 18px; text-align: center; padding-top: 8px;">
                       {{post.dates}}
                     </p>
                   </th>
