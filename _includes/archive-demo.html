@@ -43,6 +43,7 @@
     <div class="row">
       {% if post.cover_image %}
         <div class="column" style="float: left; width: 70%;">
+          <!-- Left column - Product overview -->
 
           <h2>
             {{ title }}
@@ -50,18 +51,18 @@
 
           {% if post.languages || if post.dates%}
             <table style="width:100%;text-align: center;">
-              <tr style="padding-top: 0px;">
+              <tr style="padding: 0px;">
                 {% if post.languages %}
-                  <th style="width:50%;padding-top: 0px;">
-                    <p style="font-style: italic;font-weight: normal; font-size: 18px; text-align: center; padding-top: 0px;">
+                  <th style="width:50%;height: 100%;">
+                    <p style="font-style: italic;font-weight: normal; font-size: 18px; text-align: center; padding: 0px;">
                       {{post.languages}}
                     </p>
                   </th>
                 {% endif %}
 
                 {% if post.dates %}
-                  <th style="width:50%;">
-                    <p style="font-style: italic; font-weight: normal; font-size: 18px; text-align: center; padding-top: 0px;">
+                  <th style="width:50%;height: 100%;">
+                    <p style="font-style: italic; font-weight: normal; font-size: 18px; text-align: center; padding: 0px;">
                       {{post.dates}}
                     </p>
                   </th>
@@ -74,7 +75,7 @@
             <p style="padding-top: 0px"> {{ post.overview }} </p>
           {% endif%}
           
-          <!-- Left column - Product overview -->
+          
           <div>
             <table style="width:100%;border:none;"">
               <tr>
