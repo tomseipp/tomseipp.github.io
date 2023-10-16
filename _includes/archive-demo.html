@@ -26,10 +26,13 @@
   clear: both;
 }
 
-.th, .td {
-  padding: 5px;
+.th {
+  padding-top: 5px;
 }
 
+.td {
+  padding-top: 5px;
+}
 </style>
 
 <div class="{{ include.type | default: "list" }}__item">
@@ -58,7 +61,7 @@
               <tr>
                 {% if post.languages %}
                   <th style="width:50%;">
-                    <p style="font-style: italic;font-weight: normal;text-align: center;">
+                    <p style="font-style: italic;font-weight: normal; font-size: 18px; text-align: center;">
                       {{post.languages}}
                     </p>
                   </th>
