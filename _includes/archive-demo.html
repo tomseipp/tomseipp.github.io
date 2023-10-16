@@ -51,7 +51,7 @@
 
           {% if post.languages || if post.dates%}
             <table style="width:100%; border: none;">
-              <tr style="padding: 0px;height: 24px">
+              <tr style="height: 24px">
                 {% if post.languages %}
                   <td style="width:50%; border: none;font-style: italic;font-weight: normal; font-size: 18px; text-align: center;">
                     {{post.languages}}
@@ -79,11 +79,11 @@
                   <td style="width:50%; border: none; text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
                     Explore the project
                   </a></td>
-                  <td style="width: 50%; border:none;"><a href="{{post.git_link}}">
+                  <td style="width: 50%; border:none; text-align:center;"><a href="{{post.git_link}}">
                     Explore the code
                   </a></td>
                 {% elsif post.permalink %}
-                  <td style="border:none;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                  <td style="border:none; text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
                     Explore the project
                   </a></td>
                 {% endif %}
@@ -133,12 +133,14 @@
               {% elsif post.permalink %}
                 <th style="border:none;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
                   Explore the project
-                </a></th>
+                </a>
+              </th>
               {% endif %}
             </tr>
           </table>
         </div>
         {% endif %}
       </div>
+    <br> </br>
   </article>
 </div>
