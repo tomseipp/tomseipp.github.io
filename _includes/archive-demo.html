@@ -49,26 +49,23 @@
             {{ title }}
           </h2>
 
-          <table style="width:100%;border:none;"">
-            {% if post.git_link %}
-              <tr>
-                {% if post.languages || if post.dates %}
-                  <th style="border:none;text-align:center;">
-                    <a>
-                      {{post.languages}}
-                    </a>
-                  </th>
-                {% endif %}
-                {% if post.dates %}
-                  <th style="border:none;">
-                    <a>
-                      {{post.dates}}
-                    </a>
-                  </th>
-                {% endif %}
-              </tr>
-            </table>
-          {% endif %}
+          <table style="width:100%;border:none;text-align: center;""">
+            <tr>
+              {% if post.languages || if post.dates %}
+                <th style="border:none;">
+                  {{post.languages}}
+                </th>
+              {% endif %}
+
+              {% if post.dates %}
+                <th style="border:none;">
+                  <a>
+                    {{post.dates}}
+                  </a>
+                </th>
+              {% endif %}
+            </tr>
+          </table>
 
           {% if post.languages %}
             <p style="font-style: italic; text-align: center;">
