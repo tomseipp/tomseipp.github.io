@@ -50,7 +50,7 @@
           </h2>
 
           {% if post.languages || if post.dates%}
-            <table style="width:100%;">
+            <table style="width:100%; border: none;">
               <tr style="padding: 0px;height: 24px">
                 {% if post.languages %}
                   <td style="width:50%;font-style: italic;font-weight: normal; font-size: 18px; text-align: center;">
@@ -76,16 +76,16 @@
             <table style="width:100%;border:none;"">
               <tr>
                 {% if post.git_link %}
-                  <th style="border:none;text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                  <td style="width:50%; text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
                     Explore the project
-                  </a></th>
-                  <th style="border:none;"><a href="{{post.git_link}}">
+                  </a></td>
+                  <td style="width: 50%; border:none;"><a href="{{post.git_link}}">
                     Explore the code
-                  </a></th>
+                  </a></td>
                 {% elsif post.permalink %}
-                  <th style="border:none;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                  <td style="border:none;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
                     Explore the project
-                  </a></th>
+                  </a></td>
                 {% endif %}
               </tr>
             </table>
