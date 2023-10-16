@@ -49,9 +49,11 @@
             {{ title }}
           </h2>
 
+          {% if post.languages || if post.dates%}
           <table style="width:100%;border:none;text-align: center;""">
+
             <tr>
-              {% if post.languages || if post.dates %}
+              {% if post.languages %}
                 <th style="border:none;">
                   {{post.languages}}
                 </th>
@@ -59,19 +61,13 @@
 
               {% if post.dates %}
                 <th style="border:none;">
-                  <a>
-                    {{post.dates}}
-                  </a>
+                  {{post.dates}}
                 </th>
               {% endif %}
             </tr>
           </table>
-
-          {% if post.languages %}
-            <p style="font-style: italic; text-align: center;">
-              {{post.languages}}
-            </p>
           {% endif %}
+          
       
           {% if post.read_time %}
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
