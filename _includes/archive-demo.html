@@ -53,18 +53,14 @@
             <table style="width:100%;">
               <tr style="padding: 0px;height: 24px">
                 {% if post.languages %}
-                  <td style="width:50%;height: 24px;">
-                    <p style="font-style: italic;font-weight: normal; font-size: 18px; text-align: center; padding: 0px;">
-                      {{post.languages}}
-                    </p>
+                  <td style="width:50%;font-style: italic;font-weight: normal; font-size: 18px; text-align: center;">
+                    {{post.languages}}
                   </td>
                 {% endif %}
 
                 {% if post.dates %}
-                  <td style="width:50%;height: 24px;">
-                    <p style="font-style: italic; font-weight: normal; font-size: 18px; text-align: center; padding: 0px;">
-                      {{post.dates}}
-                    </p>
+                  <td style="width:50%;font-style: italic;font-weight: normal; font-size: 18px; text-align: center;">
+                    {{post.dates}}
                   </td>
                 {% endif %}
               </tr>
