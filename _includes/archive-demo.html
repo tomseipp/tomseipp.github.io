@@ -49,6 +49,26 @@
             {{ title }}
           </h2>
 
+          <table style="width:100%;border:none;"">
+            {% if post.git_link %}
+              <tr>
+                {% if post.languages || if post.dates %}
+                  <th style="border:none;text-align:center;">
+                    <a>
+                      {{post.languages}}
+                    </a>
+                  </th>
+                {% if post.dates %}
+                  <th style="border:none;">
+                    <a>
+                      {{post.dates}}
+                    </a>
+                  </th>
+                {% endif %}
+              </tr>
+            </table>
+          {% endif %}
+
           {% if post.languages %}
             <p style="font-style: italic; text-align: center;">
               {{post.languages}}
