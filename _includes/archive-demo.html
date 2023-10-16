@@ -53,13 +53,13 @@
             <table style="width:100%; border: none;">
               <tr style="padding: 0px;height: 24px">
                 {% if post.languages %}
-                  <td style="width:50%;font-style: italic;font-weight: normal; font-size: 18px; text-align: center;">
+                  <td style="width:50%; border: none;font-style: italic;font-weight: normal; font-size: 18px; text-align: center;">
                     {{post.languages}}
                   </td>
                 {% endif %}
 
                 {% if post.dates %}
-                  <td style="width:50%;font-style: italic;font-weight: normal; font-size: 18px; text-align: center;">
+                  <td style="width:50%; border: none;font-style: italic;font-weight: normal; font-size: 18px; text-align: center;">
                     {{post.dates}}
                   </td>
                 {% endif %}
@@ -73,10 +73,10 @@
           
           
           <div>
-            <table style="width:100%;border:none;"">
+            <table style="width:100%;border:none;">
               <tr>
                 {% if post.git_link %}
-                  <td style="width:50%; text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                  <td style="width:50%; border: none; text-align:center;"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
                     Explore the project
                   </a></td>
                   <td style="width: 50%; border:none;"><a href="{{post.git_link}}">
