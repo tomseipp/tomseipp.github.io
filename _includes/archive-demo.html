@@ -45,13 +45,13 @@
         <div class="column" style="float: left; width: 70%;">
           <!-- Left column - Product overview -->
 
-          <h2 style="margin: auto;">
+          <h2 style="margin-left: auto; margin-right: auto;">
             {{ title }}
           </h2>
 
           {% if post.languages || if post.dates%}
             <table style="width:100%; border: none;">
-              <tr style="height: 24px">
+              <tr style="padding-top: 50px;">
                 {% if post.languages %}
                   <td style="width:50%; border: none;font-style: italic;font-weight: normal; font-size: 18px; text-align: center;">
                     {{post.languages}}
@@ -59,7 +59,7 @@
                 {% endif %}
 
                 {% if post.dates %}
-                  <td style="width:50%; border: none; padding-top: 15px;
+                  <td style="width:50%; border: none;
                   font-style: italic;font-weight: normal; font-size: 18px; text-align: center;">
                     {{post.dates}}
                   </td>
