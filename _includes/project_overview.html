@@ -53,6 +53,7 @@
   gap: 10px;
   background-color: #FFFFFF;
   padding: 10px;
+  font-family: "sans-serif";
 }
 
 </style>
@@ -62,15 +63,27 @@
   <div class="item1">
     {{ post.title }}
   </div>
-  <div class="item2">{{ post.languages }}</div>
-  <div class="item3">{{ post.dates }}</div>
-  <div class="item4">
-    {{ post.description }}
+  <div class="item2">
+    {{ post.languages }}
   </div>
-  <div class="item5"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+  <div class="item3">
+    {{ post.dates }}
+  </div>
+  <div class="item4">
+    {{ post.overview }}
+  </div>
+  <div class="item5">
+    <a href="{{ base_path }}{{ post.url }}" rel="permalink">
     Explore the project
-  </a></div>
-  <div class="item6">{{ post.git_link}}</div>
-  <div class="item7"><img src="NoseTipDetection.png" alt="Hi"></div>
+    </a>
+  </div>
+  <div class="item6"> 
+    <a href="{{post.git_link}}">
+      Explore the code
+    </a>
+  </div>
+  <div class="item7">
+    <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract"/>
+  </div>
 </div>
 </body>
