@@ -1,0 +1,76 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<style>
+/* Title formatting */
+.item1 { grid-area: title; padding: 10px;
+         background-color: #DADADA; color: #3F3F3F;
+         font-size: 32px;
+         display: flex; justify-content: center; align-items: center;}
+
+/* Language formatting */
+.item2 { grid-area: language; padding: 10px;
+         color: #3F3F3F;
+         font-style: italic;font-weight: normal; font-size: 18px;
+         display: flex; justify-content: center; align-items: center;}
+
+.item3 { grid-area: dates; padding: 10px;
+         color: #3F3F3F;
+         font-size: 18px;
+         display: flex; justify-content: center; align-items: center;}
+
+.item4 { grid-area: description; padding: 10px 30px;
+        color: #3F3F3F;}
+
+.item5 { grid-area: explore_proj; padding: 10px;
+         color: #3F3F3F;
+         display: flex; justify-content: center; align-items: center;}
+
+.item6 { grid-area: explore_code; padding: 10px;
+         color: #3F3F3F;
+         display: flex; justify-content: center; align-items: center;}
+
+.item7 { grid-area: image; display: flex; justify-content: center; align-items: center;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'title title title'
+    'language dates image'
+    'description description image'
+    'explore_proj explore_code image';
+  gap: 10px;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+</style>
+
+<body>
+<div class="grid-container">
+  <div class="item1">
+    {{ post.title }}
+  </div>
+  <div class="item2">{{ post.languages }}</div>
+  <div class="item3">{{ post.dates }}</div>
+  <div class="item4">
+    {{ post.description }}
+  </div>
+  <div class="item5"><a href="{{ base_path }}{{ post.url }}" rel="permalink">
+    Explore the project
+  </a></div>
+  <div class="item6">{{ post.git_link}}</div>
+  <div class="item7"><img src="NoseTipDetection.png" alt="Hi"></div>
+</div>
+</body>
