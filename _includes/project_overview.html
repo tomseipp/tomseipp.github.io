@@ -19,6 +19,11 @@
          font-size: 24px;
          display: flex; align-items: center;}
 
+.info_holder {grid-area: info; padding: 10px;;
+              color: #3F3F3F; 
+              font-size: 18px; 
+              display: flex; justify-content: center; align-items: center;}
+
 /* Language formatting */
 .item2 { grid-area: language; padding: 10px;
          color: #3F3F3F;
@@ -47,7 +52,7 @@
   display: grid;
   grid-template-areas:
     'title title'
-    'language dates'
+    'info info'
     'description description'
     'explore_proj explore_code';
   gap: 10px;
@@ -59,7 +64,7 @@
   display: grid;
   grid-template-areas:
     'title title title'
-    'language dates image'
+    'info info image'
     'description description image'
     'explore_proj explore_code image';
   gap: 10px;
@@ -73,11 +78,15 @@
   <div class="item1">
     {{ post.title }}
   </div>
-  <div class="item2">
-    {{ post.languages }}
-  </div>
-  <div class="item3">
-    {{ post.dates }}
+  <div class="info_holder">
+    <div class="column" style="width: 50%; display: flex; justify-content: center; align-items: center;"> 
+      {{post.languages}}
+    </div>
+    {% if post.dates %}
+      <div class="column" style="width: 50%; display: flex; justify-content: center; align-items: center;">
+        {{post.dates}}
+      </div>  
+    {% endif %}
   </div>
   <div class="item4">
     {{ post.overview }}
