@@ -16,7 +16,7 @@
 /* Title formatting */
 .item1 { grid-area: title; padding: 10px; border-radius: 15px;
          background-color: #DADADA; color: #3F3F3F;
-         font-size: 24px;
+         font-style: bold; font-size: 22px;
          display: flex; align-items: center;}
 
 .info_holder {grid-area: info; padding: 10px;;
@@ -79,11 +79,14 @@
     {{ post.title }}
   </div>
   <div class="info_holder">
-    <div class="column" style="width: 50%; display: flex; justify-content: center; align-items: center;"> 
+    {% if post.languages}
+    <div class="column" style="width: 50%; font-style: italic;font-weight: normal; font-size: 16px; 
+                               display: flex; justify-content: center; align-items: center;"> 
       {{post.languages}}
     </div>
+    {% endif %}
     {% if post.dates %}
-      <div class="column" style="width: 50%; display: flex; justify-content: center; align-items: center;">
+      <div class="column" style="width: 50%; font-size: 16px; display: flex; justify-content: center; align-items: center;">
         {{post.dates}}
       </div>  
     {% endif %}
@@ -103,7 +106,7 @@
   </div>
   {% if post.container == "image" && post.cover_image %}
     <div class="item7">
-      <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract"/>
+      <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract" style="max-height: 250px;"/>
     </div>
   {% endif %}
 </div>
