@@ -7,6 +7,7 @@ overview: "The project produced a gesture classification framework and supportin
 languages: "Matlab + Python"
 cover_image: GestureCover.png
 container: image
+dates: 2023
 ---
 
 ## Project Description 
