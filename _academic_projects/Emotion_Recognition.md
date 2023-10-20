@@ -7,9 +7,10 @@ overview:
     "The project produced a novel facial emotion recognition framework that can be used to classify images. <br>
     The key contributions are ..."
 git_link: https://github.com/benhoskings1/Emotion_Recognition.git
-languages: "Matlab + Python"
+languages: Matlab + Python
 cover_image: NoseTipDetection.png
-dates: "2023"
+dates: 2023
+container: image
 ---
 
 ## Project Description 

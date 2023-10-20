@@ -17,7 +17,7 @@
 .item1 { grid-area: title; padding: 10px;
          background-color: #DADADA; color: #3F3F3F;
          font-size: 32px;
-         display: flex; justify-content: center; align-items: center;}
+         display: flex; align-items: center;}
 
 /* Language formatting */
 .item2 { grid-area: language; padding: 10px;
@@ -43,7 +43,19 @@
 
 .item7 { grid-area: image; display: flex; justify-content: center; align-items: center;}
 
-.grid-container {
+.grid-container-default {
+  display: grid;
+  grid-template-areas:
+    'title title title'
+    'language . dates'
+    'description description description'
+    'explore_proj . explore_code';
+  gap: 10px;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.grid-container-image {
   display: grid;
   grid-template-areas:
     'title title title'
@@ -58,7 +70,7 @@
 </style>
 
 <body>
-<div class="grid-container">
+<div class="grid-container{{ post.container | default: 'default' }}">
   <div class="item1">
     {{ post.title }}
   </div>
@@ -81,8 +93,10 @@
       Explore the code
     </a>
   </div>
-  <div class="item7">
-    <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract"/>
-  </div>
+  {% if post.cover_image %}
+    <div class="item7">
+      <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract"/>
+    </div>
+  {% endif %}
 </div>
 </body>
