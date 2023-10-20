@@ -46,10 +46,10 @@
 .grid-container-default {
   display: grid;
   grid-template-areas:
-    'title title title'
-    'language . dates'
-    'description description description'
-    'explore_proj . explore_code';
+    'title title'
+    'language dates'
+    'description description'
+    'explore_proj explore_code';
   gap: 10px;
   background-color: #FFFFFF;
   padding: 10px;
@@ -70,7 +70,7 @@
 </style>
 
 <body>
-<div class="grid-container{{ post.container | default: 'default' }}">
+<div class="grid-container-{{post.container | default: 'default'}}">
   <div class="item1">
     {{ post.title }}
   </div>
