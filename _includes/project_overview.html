@@ -15,7 +15,7 @@
 <style>
 /* Title formatting */
 .item1 { grid-area: title; padding: 10px; border-radius: 15px;
-         color: #3F3F3F;
+         background-color: #D3D8DB; color: #3F3F3F;
          font-weight: bold; font-size: 22px;
          display: flex; align-items: center;}
 
@@ -86,7 +86,7 @@
     </div>
     {% endif %}
     {% if post.dates %}
-      <div class="column" style="width: 50%; display: flex; justify-content: center; align-items: center;">
+      <div class="column" style="width: 50%; font-size: 16px; display: flex; justify-content: center; align-items: center;">
         {{post.dates}}
       </div>  
     {% endif %}
