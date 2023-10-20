@@ -6,8 +6,11 @@ main:
   - title: "Hobby Projects"
     url: /hobby_projects/  
 
-  - title: "Experience"
-    url: /experience/  
+  - title: "Skills & Experience"
+    url: /skills_experience/  
     
   - title: "CV"
     url: /cv/
+
+  - title: "Recommendations"
+    url: /recommendations/
