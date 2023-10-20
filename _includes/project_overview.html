@@ -93,7 +93,7 @@
       Explore the code
     </a>
   </div>
-  {% if post.cover_image %}
+  {% if post.container == "image" && post.cover_image %}
     <div class="item7">
       <img src="/images/{{post.cover_image}}" alt="emotion-recognition-abstract"/>
     </div>

@@ -6,6 +6,7 @@ author_profile: true
 overview: "The project produced a gesture classification framework and supporting matlab app."
 languages: "Matlab + Python"
 cover_image: GestureCover.png
+container: image
 ---
 
 ## Project Description 
