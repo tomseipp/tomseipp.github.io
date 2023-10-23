@@ -10,5 +10,9 @@ container: image
 dates: 2023
 ---
 
-## Project Description 
-The project primarily leveraged transfer learning
+<body>
+  <video width="320" height="240" controls>
+    <source src="/videos/Gesture Demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</body>
