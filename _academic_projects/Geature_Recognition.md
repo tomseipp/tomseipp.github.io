@@ -11,8 +11,20 @@ dates: 2023
 ---
 
 <body>
-  <video width="320" height="240" controls>
+  <h2>
+    Video Demo
+  </h2>
+
+  <video width="640" height="480" autoplay muted>
     <source src="/videos/Gesture Demo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+  <h2>
+    Project Description 
+  </h2>
+
+  <p>
+    This project was primarily undertaken to explore the benefits of using transfer learning to produce an accurate system for a new task. We captured all of the training data, and subsequently re-trained two neural networks: A YoloV4 networka and a ResNet50 network. The YoloV4 network produced the hand region identification for image segmentation, and subsequently the ResNet50 was used to classify the segmented image. 
+  </p>
 </body>
