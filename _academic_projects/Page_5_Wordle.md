@@ -9,7 +9,7 @@ dates: 2022
 ---
 
 ## Project Description 
-A few lines abou the project on a braod level 
+A few lines about the project on a broad level 
 
 ## Code Access
 <!-- <a href="{{git_link}}">Explore the git repo</a> -->
