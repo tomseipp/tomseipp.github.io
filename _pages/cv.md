@@ -6,4 +6,4 @@ redirect_from:
   - /resume
 ---
 
-<img src="/images/Benjamin_Hoskings_CV.pdf" alt="ben-hoskings-cv" width="900"/>
+<img src="Benjamin_Hoskings_CV.pdf" alt="ben-hoskings-cv" width="900"/>
