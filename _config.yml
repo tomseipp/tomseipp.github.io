@@ -213,7 +213,7 @@ defaults:
  # _hobby_projects
   - scope:
       path: ""
-      type: hobby_projects
+      type: personal_projects
     values:
       layout: single
       author_profile: true
