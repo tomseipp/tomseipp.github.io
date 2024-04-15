@@ -3,8 +3,8 @@ main:
   - title: "Academic Projects"
     url: /academic_projects/
 
-  - title: "Hobby Projects"
-    url: /hobby_projects/  
+  - title: "Personal Projects"
+    url: /personal_projects/  
 
   - title: "Skills & Experience"
     url: /skills_experience/  
