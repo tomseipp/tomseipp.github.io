@@ -179,7 +179,7 @@ collections:
   academic_projects:
     output: true
     permalink: /:collection/:path/
-  hobby_projects:
+  personal_projects:
     output: true
     permalink: /:collection/:path/
 
