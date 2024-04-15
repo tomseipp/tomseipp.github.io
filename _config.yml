@@ -8,13 +8,13 @@
 # Site Settings
 
 locale                   : "en-GB"
-title                    : "Ben Hoskings / Homepage"
+title                    : "Tom / Homepage"
 title_separator          : "-"
-name                     : &name "Ben Hoskings Website"
-description              : &description "Ben Hoskings personal website"
-url                      : https://benhoskings1.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Tom Seipp Website"
+description              : &description "Tom Seipp personal website"
+url                      : https://tomseipp.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "/benhoskings1.github.io"
+repository               : "/tomseipp.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -76,19 +76,19 @@ social:
 analytics:
   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "G-B3F4HH3TH8"
 
 
 # Site Author
 author:
-  name             : "Ben Hoskings"
+  name             : "Tom Seipp"
   avatar           : "ProfilePic.png"
-  bio              : "4rd Year Systems Engineer"
-  location         : "Leamington Spa"
-  employer         : "University of Warwick"
+  bio              : "1st Year Mechanical Engineer"
+  location         : "Shefiield"
+  employer         : "University of Sheffield"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
-  email            : "benjaminhoskings@gmail.com"
+  email            : "tomrseipp@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -97,13 +97,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "benhoskings1"
+  github           : "tomseipp"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "ben-hoskings"
+  linkedin         : "tom-seipp"
   orcid            : # "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
