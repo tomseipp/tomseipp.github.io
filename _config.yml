@@ -8,7 +8,7 @@
 # Site Settings
 
 locale                   : "en-GB"
-title                    : "Tom / Homepage"
+title                    : "Tom Seipp"
 title_separator          : "-"
 name                     : &name "Tom Seipp Website"
 description              : &description "Tom Seipp personal website"
@@ -84,7 +84,7 @@ author:
   name             : "Tom Seipp"
   avatar           : "ProfilePic.png"
   bio              : "1st Year Mechanical Engineer"
-  location         : "Shefiield"
+  location         : "Sheffield"
   employer         : "University of Sheffield"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
@@ -100,10 +100,10 @@ author:
   github           : "tomseipp"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "https://www.instagram.com/tomseipp_/"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "tom-seipp"
+  linkedin         : "https://www.linkedin.com/in/tom-seipp-1252652a3/"
   orcid            : # "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
