@@ -1,7 +1,7 @@
 ---
 title: "Pokemon RPG"
 collection: personal_projects
-permalink: /personal_projects/Pokemon
+permalink: /_personal_projects/Pokemon
 author_profile: true
 overview: "Recreating one of my favourite games from childhood!"
 languages: "Python"
